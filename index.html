@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <link rel="stylesheet" href="App.css"/>
+
+  </head>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    .header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    
+    .header nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .header nav ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+    
+    .header nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    
+    .main {
+      padding: 2rem;
+      background-color: red;
+    }
+    
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+  </style>
+  <body>
+    <div id="root"></div>
+    <h1>Hello</h1>
+
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main className="main">
+      <section id="about">
+        <h2>About Us</h2>
+        <p>This is a sample React website showcasing a modular structure.</p>
+      </section>
+      <section id="services">
+        <h2>Our Services</h2>
+        <p>We provide various services to meet your needs.</p>
+      </section>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email us at <a href="mailto:contact@example.com">contact@example.com</a>.</p>
+      </section>
+    </main>
+    
+        <footer className="footer">
+          <p>&copy; 2025 My Website. All rights reserved.</p>
+        </footer>
+   
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
